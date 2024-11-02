@@ -7567,7 +7567,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1">#variables</span>
@@ -7583,10 +7583,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#to_delete</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#to_delete : information</span>
 <span class="n">ruta_absoluta</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">Bogota_police_report_route</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">ruta_absoluta</span><span class="p">)</span>
 </pre></div>
@@ -7612,10 +7612,10 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Reading input files CSV</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Reading input file CSV</span>
 <span class="n">df_police_report</span><span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">National_police_report_route</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"List of fields and data types:"</span><span class="p">)</span>
@@ -7660,10 +7660,10 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Leer el archivo Excel en un DataFrame</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Reading input file Excel</span>
 <span class="n">df_bogota_report</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="n">Bogota_police_report_route</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"List of fields and data types:"</span><span class="p">)</span>
@@ -7747,10 +7747,11 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Bogota Dataset</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#print of first rows </span>
+<span class="c1">#Bogota Dataset</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df_bogota_report</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
 </pre></div>
 </div>
@@ -7801,11 +7802,11 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filtrar solo las filas donde el género es MASCULINO</span>
-<span class="n">df_masculino</span> <span class="o">=</span> <span class="n">df_police_report</span><span class="p">[</span><span class="n">df_police_report</span><span class="p">[</span><span class="s1">'GENERO'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'MASCULINO'</span><span class="p">]</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Filter only rows where gender is:  MASCULINO</span>
+<span class="n">df_masculino_incidents</span> <span class="o">=</span> <span class="n">df_police_report</span><span class="p">[</span><span class="n">df_police_report</span><span class="p">[</span><span class="s1">'GENERO'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'MASCULINO'</span><span class="p">]</span>
 </pre></div>
 </div>
 </div>
@@ -7816,20 +7817,20 @@ dtype: object
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Crear una gráfica de barras mostrando la cantidad de incidentes por 'ARMAS MEDIOS'</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  <span class="c1"># Ajusta el tamaño de la figura</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_masculino</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'ARMAS MEDIOS'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'viridis'</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Bar graph showing the number of incidents using 'ARMAS MEDIOS'</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>  
+<span class="n">sns</span><span class="o">.</span><span class="n">countplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">df_masculino_incidents</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">'ARMAS MEDIOS'</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="s1">'viridis'</span><span class="p">)</span>
 
-<span class="c1"># Personalizar la gráfica</span>
+<span class="c1"># Graph properties</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Cantidad de Incidentes por Tipo de Arma (Género Masculino)'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'Armas o Medios'</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'Cantidad de Incidentes'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>  <span class="c1"># Rota las etiquetas del eje X para mejor legibilidad</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span> 
 
-<span class="c1"># Mostrar la gráfica</span>
+<span class="c1"># Show</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -7865,13 +7866,10 @@ Passing `palette` without assigning `hue` is deprecated and will be removed in v
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Distribución Temporal de los Incidentes</span>
-
-<span class="c1">#Examina la tendencia de los incidentes a lo largo del tiempo usando FECHA HECHO.</span>
-
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#Incidents temporay distributiono using:  FECHA HECHO.</span>
 
 <span class="n">df_police_report</span><span class="p">[</span><span class="s1">'FECHA HECHO'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_police_report</span><span class="p">[</span><span class="s1">'FECHA HECHO'</span><span class="p">])</span>
 <span class="n">df_tiempo</span> <span class="o">=</span> <span class="n">df_police_report</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="n">df_police_report</span><span class="p">[</span><span class="s1">'FECHA HECHO'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">to_period</span><span class="p">(</span><span class="s1">'M'</span><span class="p">))</span><span class="o">.</span><span class="n">size</span><span class="p">()</span>
